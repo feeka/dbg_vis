@@ -1,0 +1,23 @@
+digraph "DeBruijn graph" {
+  GGA [label="0"] ;
+  TAC [label="1"] ;
+  CAC [label="2"] ;
+  GGT [label="3"] ;
+  CGG [label="4"] ;
+  GAT [label="5"] ;
+  TTA [label="6"] ;
+  GCA [label="7"] ;
+  GTT [label="8"] ;
+  ACG [label="9"] ;
+  GCA -> CAC ;
+  CAC -> ACG ;
+  ACG -> CGG ;
+  CGG -> GGT ;
+  GGT -> GTT ;
+  GTT -> TTA ;
+  TTA -> TAC ;
+  TAC -> ACG ;
+  ACG -> CGG ;
+  CGG -> GGA ;
+  GGA -> GAT ;
+}
